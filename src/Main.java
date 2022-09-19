@@ -11,14 +11,12 @@ public class Main {
         // Задача 1
         int[] arr = generateRandomArray();
         int sum = 0;
-        for (int month = 1; month < arr.length; month++) {
+        for (int month = 0; month < arr.length; month++) {
             sum += arr[month];
-            if (month % 29 == 0) {
-                System.out.println("Сумма трат за месяц составила " + sum + " рублей.");
-            }
+            System.out.println("Сумма трат за месяц составила " + sum + " рублей.");
         }
         // Задача 2
-        int maxSum = -1;
+        int maxSum = Integer.MIN_VALUE;
         for (int month = 0; month < arr.length; month++) {
             maxSum += arr[month];
             if (arr[month] > maxSum) {
@@ -35,15 +33,8 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей. Максимальная сумма трат за день составила " + maxSum + " рублей.");
         // Задача 3
-        double sum1 = 0;
-        for (int month = 1; month < arr.length; month++) {
-            sum1 += arr[month];
-            if (month % 29 == 0) {
-                 sum1 = (sum / 30.0);
-                System.out.println("Сумма трат за месяц составила " + sum1 + " рублей.");
-            }
-
-        }
+        int middleSum = sum / 30;
+        System.out.println("Сумма трат за месяц составила " + middleSum + " рублей.");
         // Задача 4
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int index = reverseFullName.length - 1; index >= 0; index--) {
