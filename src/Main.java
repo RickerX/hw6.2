@@ -18,14 +18,12 @@ public class Main {
         // Задача 2
         int maxSum = Integer.MIN_VALUE;
         for (int month = 0; month < arr.length; month++) {
-            maxSum += arr[month];
             if (arr[month] > maxSum) {
                 maxSum = arr[month];
             }
         }
-        int minSum = arr.length;
+        int minSum = Integer.MAX_VALUE;
         for (int month = 0; month < arr.length; month++) {
-            minSum += arr[month];
             if ( arr[month] < minSum) {
                 minSum = arr[month];
             }
