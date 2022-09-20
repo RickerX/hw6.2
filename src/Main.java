@@ -27,7 +27,7 @@ public class Main {
             if ( arr[month] < minSum) {
                 minSum = arr[month];
             }
-
+            // Сейчас вроде правильно
         }
         System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей. Максимальная сумма трат за день составила " + maxSum + " рублей.");
         // Задача 3
